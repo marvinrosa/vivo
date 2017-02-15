@@ -1,17 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
 	<meta charset="UTF-8">
 	<title>.::VIVO::.</title>
 </head>
 <body>
 	
-
 	<h1 align="center">------ Bienvenido a Vivo ------</h1>
 
-
 	<!-- Principal -->
-	<section class="main">
+	<div class="main">
 
 				<!--Banner Principal-->
 				<center>
@@ -19,7 +17,7 @@
 				</center>
 		
 		<!--Barra de navegación-->
-		<section class="nav">
+		<div class="nav">
 			<nav>
 				<center>
 					<ul>
@@ -30,87 +28,70 @@
 				</ul>
 				</center>
 			</nav>
-		</section>
+		</div>
 		
-		<!-- Sección de publicaciones -->
-		<section class="articles">
-			
-
-			
-
+		<!-- Contenido Principal -->
+		<div class="mainContent">
 			<center>
-			<h2>Contacto</h2>
-				<form action="">
-					
-					<legend> Datos Personales </legend>
-					
+				<h2>Contacto</h2>
+					<form action="">
 						
-						<br>
+						<legend> Datos Personales </legend>
 
-					 	<label for=""> Nombre:  </label> <input type="text" id="Nombre" required>
-                		<br> <br>
-					    <label for=""> Apellido:  </label> <input type="text" id="Nombre" required>
-						<br> <br>
-					    <label for="">Género:</label>
- 						<input type="radio" name="genero" value="hombre" /> Hombre
- 						<input type="radio" name="genero" value="mujer" /> Mujer
-
-						 <br> <br>
-                		<label for="">Correo Electronico: </label> <input type="email" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}">
-                
-					 	<br> <br>
-                		<label for=""> Edad:  </label> <input type="number" name="edad" min="18" max="99" step="5"  required="required">
-                
-                		<br> <br>
-                		<label> Telefono:</label> <input type="tel" name="telefono" pattern="[0-9]{9}" required>
-
-                		<br> <br>
-                		<label for=""> Envie su consulta: </label> 
-                		<textarea name="" id="" cols="30" rows="5"></textarea>
-
-                		<br> <br>
-		                <label for=""> Seleccione la opción de su preferencia: </label>
-		                 <datalist id="listas">
-		                    <option value="Nacionales">
-		                    <option value="Extramjeras">
-		                    <option value="Otros">
-		                  
-		                </datalist>
-                		<input name="color" list="listas">
+							<!-- TextBox -->
+							<br>
+						 	<label for=""> Nombre:  </label> <input type="text" id="Nombre" required>
+	                		<br> <br>
+						    <label for=""> Apellido:  </label> <input type="text" id="Nombre" required>
 							<br> <br>
-                		  <input type="checkbox" name="vehicle" value="Car" checked> Enviar una copia de la información<br>
-                
-		                <br> <br>
-		                <input type="submit" value="Enviar">
-		                <br><br>
+								
+							<!-- RadioButton-->
+						    <label for="">Género:</label>
+	 						<input type="radio" name="genero" value="hombre" /> Hombre
+	 						<input type="radio" name="genero" value="mujer" /> Mujer
+							 <br> <br>
+	                		
+	                		<!-- TextBox -->
+	                		<label for="">Correo Electronico: </label> <input type="email" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}">
+	                
+						 	<br> <br>
+	                		<label for=""> Edad:  </label> <input type="number" name="edad" min="18" max="99" step="5"  required="required">
+	                
+	                		<br> <br>
+	                		<label> Telefono:</label> <input type="tel" name="telefono" pattern="[0-9]{9}" required>
+							
+							<!-- TextArea -->
+	                		<br> <br>
+	                		<label for=""> Envie su consulta: </label> 
+	                		<textarea name="" id="" cols="30" rows="5"></textarea>
+							
+							<!--ComboBox-->
+	                		<br> <br>
+			                <label for=""> Seleccione la opción de su preferencia: </label>
+			                 <datalist id="listas">
+			                    <option value="Nacionales">
+			                    <option value="Extramjeras">
+			                    <option value="Otros">
+			                </datalist>
+							<input name="datos" list="listas">
 
-					
-					
-
-				</form>
+							<!--  CheckBox-->
+							  <br> <br>
+	                		  <input type="checkbox" name="vehicle" value="Car" checked> Enviar una copia de la información<br>
+	                
+	                		<!-- Envio de formulario -->
+			                <br> <br>
+			                <input type="submit" value="Enviar">
+			                <br><br>
+					</form>
 			</center>
-
-
-
-
-
-		</section>
-
-
-		<!-- Barra lateral -->
-		<aside>
-			
-		</aside>
-
-	</section>
+		</div>
+	</div>
 
 	<!-- Footer -->
-
 	<footer>
 		<center>  © Copyright 2017, Vivo. Todos los derechos reservados. </center>
 	</footer>
-
-
 	
 </body>
 </html>
